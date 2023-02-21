@@ -66,7 +66,7 @@ function Form() {
           <input
             type="text"
             name="message"
-            placeholder="Favorite Pizzeria?"
+            placeholder="Favorite pizzeria?"
             value={toSend.message}
             onChange={handleChange}
           />{" "}
