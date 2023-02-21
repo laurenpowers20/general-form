@@ -18,6 +18,10 @@
   }
 }
 
+body {
+  background-color: #ffb703;
+}
+
 .pizza-icon {
   animation: react 1.5s linear infinite;
 }
@@ -98,7 +102,7 @@ select {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   font-size: 1rem;
 }
-.title{
+.title {
   font-size: 2rem;
 }
 .form-comments {

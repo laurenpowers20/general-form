@@ -61,7 +61,9 @@ function Form() {
             <option value="">--Please choose an option--</option>
             <option value={"Square"}>Square</option>
             <option value={"Triangle"}>Triangle</option>
-            <option value={"Circle"}>Personal Circle of deliciousness</option>
+            <option value={"Personal circle of deliciousness"}>
+              Personal circle of deliciousness
+            </option>
           </select>
           <input
             type="text"
