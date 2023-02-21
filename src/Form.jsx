@@ -81,10 +81,10 @@ function Form() {
           <div className="form-spinner">
             {isLoading ? <LoadingSpinner /> : null}
           </div>
+          <div className="message">{message ? <h2>{message}</h2> : null}</div>
           <button type="submit" className="submit-button" disabled={isLoading}>
             SUBMIT <GiPizzaSlice />
           </button>
-          <div className="message">{message ? <h2>{message}</h2> : null}</div>
         </form>
       </div>
     </>

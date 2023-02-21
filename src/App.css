@@ -46,7 +46,7 @@
 
 .pizza-icon,
 .react-icon {
-  font-size: 4rem;
+  font-size: 2.5rem;
   align-items: center;
 }
 
@@ -98,7 +98,9 @@ select {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   font-size: 1rem;
 }
-
+.title{
+  font-size: 2rem;
+}
 .form-comments {
   width: 400px;
   height: 75px;
