@@ -95,6 +95,7 @@ input {
 select {
   width: 400px;
   height: 50px;
+  color: black;
   border-radius: 10px;
   border: solid 3px black;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
