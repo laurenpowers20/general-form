@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { send } from "emailjs-com";
 import LoadingSpinner from "./LoadingSpinner";
-import { GiPizzaSlice } from "react-icons/gi";
 
 function Form() {
   const [isLoading, setIsLoading] = useState(false);
@@ -52,31 +51,22 @@ function Form() {
             value={toSend.email}
             onChange={handleChange}
           />
-          <label htmlFor="answer">What's the best pizza?</label>
+          <label htmlFor="answer">Select option One, Two, or Three</label>
           <select
             name="answer"
             onChange={handleChange}
             defaultValue={toSend.answer}
           >
             <option value="">--Please choose an option--</option>
-            <option value={"Square"}>Square</option>
-            <option value={"Triangle"}>Triangle</option>
-            <option value={"Personal circle of deliciousness"}>
-              Personal circle of deliciousness
-            </option>
-          </select>
-          <input
-            type="text"
-            name="message"
-            placeholder="Favorite pizzeria?"
-            value={toSend.message}
-            onChange={handleChange}
-          />{" "}
+            <option value={"One"}>One</option>
+            <option value={"Two"}>Two</option>
+            <option value={"Three"}>Three</option>
+          </select>{" "}
           <textarea
             type="text"
             name="comments"
             className="form-comments"
-            placeholder="Pizza thoughts?"
+            placeholder="Thoughts?"
             value={toSend.comments}
             onChange={handleChange}
           />
@@ -85,7 +75,7 @@ function Form() {
           </div>
           <div className="message">{message ? <h2>{message}</h2> : null}</div>
           <button type="submit" className="submit-button" disabled={isLoading}>
-            SUBMIT <GiPizzaSlice />
+            SUBMIT
           </button>
         </form>
       </div>

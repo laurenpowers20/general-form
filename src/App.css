@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=GFS+Didot&family=Lato:wght@300;400;700&display=swap");
 
 @keyframes spinner {
   0% {
@@ -19,12 +19,15 @@
 }
 
 body {
-  background-color: #ffb703;
+  background-color: white;
+  font-family: "GFS Didot", serif;
 }
 
-.pizza-icon {
-  animation: react 1.5s linear infinite;
+input,
+select {
+  font-family: "GFS Didot", serif;
 }
+
 .title {
   font-size: 3rem;
   padding: 0;
@@ -32,7 +35,6 @@ body {
 }
 
 .App {
-  font-family: "Gloria Hallelujah", cursive;
   font-size: 1.5rem;
   text-align: center;
   align-items: center;
@@ -48,23 +50,9 @@ body {
   animation: spinner 1.5s linear infinite;
 }
 
-.pizza-icon,
-.react-icon {
-  font-size: 2.5rem;
-  align-items: center;
-}
-
-.pizza-icon {
-  animation: spinner 20s linear infinite;
-}
-
-.react-icon {
-  animation: react 20s linear infinite;
-}
-
 .form {
   display: flex;
-  width: 400px;
+  width: 450px;
   margin: auto;
   text-align: center;
 }
@@ -102,16 +90,18 @@ select {
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   font-size: 1rem;
+  margin-bottom: 20px;
 }
 .title {
   font-size: 2rem;
 }
+
 .form-comments {
   width: 400px;
   height: 75px;
+  font-family: "GFS Didot", serif;
   border-radius: 10px;
   border: solid 2px black;
-  font-family: Arial, Helvetica, sans-serif;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -133,6 +123,7 @@ select {
 .submit-button:hover {
   background-color: red;
   color: white;
+  cursor: pointer;
 }
 
 .button-54 {
@@ -147,10 +138,11 @@ select {
   padding: 0.25em 0.5em;
   box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
     5px 5px 0px 0px;
-  position: relative;
+
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  margin: 40px;
 }
 
 .button-54:active {
@@ -178,11 +170,6 @@ select {
 
   .title {
     font-size: 1.5rem;
-  }
-
-  .pizza-icon,
-  .react-icon {
-    font-size: 1.7rem;
   }
 
   input {
